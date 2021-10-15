@@ -1,0 +1,40 @@
+
+
+.holder{
+    padding: 100px;
+}
+
+//Text Color
+@each $color, $value in $united-colors{
+    .color-#{$color}{
+        color: $value !important;
+    }
+
+    .color-#{$color}-hover:hover{
+        color: $value !important;
+    }
+}
+
+//background color
+@each $color, $value in $united-colors{
+    .bg-#{$color}{
+        background-color: $value;
+    }
+
+    .bg-#{$color}-hover-i:hover{
+        background-color: $value !important;
+    }
+
+    .bg-#{$color}-hover:hover{
+        background-color: $value;
+    }
+
+    [data-role=button].bg-#{$color}:hover{
+        background-color: darken($value, 10%);
+    }
+
+    [data-role=button].bg-#{$color}[disabled=disabled]{
+        opacity: 0.5;
+        background-color: $value;
+    }
+}

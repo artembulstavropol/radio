@@ -1,0 +1,178 @@
+
+
+//
+//Font Vars
+//
+$main-font : 'Raleway', sans-serif;
+
+//
+//Font Size Var
+//
+$default-font-size-number: 14;
+$default-font-size: 14px;
+$html-root-font-size: 14px;
+
+//
+//Transition Time Vars
+//
+$transition-time    : .4s;
+$default-transition : all ease-in-out $transition-time;
+
+//
+//Color Variables
+//
+$white        : #fff;
+$black        : #000;
+$deep-dark    : #181a27;
+
+//
+//Grays
+//
+
+$gray-100: lighten($deep-dark, 79.2);
+$gray-200: lighten($deep-dark, 70.4);
+$gray-300: lighten($deep-dark, 61.6);
+$gray-400: lighten($deep-dark, 52.8);
+$gray-500: #787faa;
+$gray-600: #636a95;
+$gray-700: lighten($deep-dark, 26.4);
+$gray-800: lighten($deep-dark, 17.6);
+$gray-900: lighten($deep-dark, 8.8);
+$gray-60:  lighten($gray-100, 6%);
+
+$dark: $gray-900;
+
+$light        : $gray-100;
+$gray         : $gray-600;
+
+$grays: ();
+$grays: map-merge(
+	(
+		"gray60": $gray-60,
+		"gray100": $gray-100,
+		"gray200": $gray-200,
+		"gray300": $gray-300,
+		"gray400": $gray-400,
+		"gray500": $gray-500,
+		"gray600": $gray-600,
+		"gray700": $gray-700,
+		"gray800": $gray-800,
+		"gray900": $gray-900
+	),
+	$grays
+);
+
+$primary      : #2879fe;//lighten(#3d5afb, 2%);//#3956f6;//#2c4cfb;//#4662ff;//#3651e8;
+$secondary    : #767b97;
+$theme        : $primary;
+$success      : #11ce86;
+$green        : $success;
+$danger       : #f3244d;
+$red          : $danger;
+$info         : #03a6ef;
+$blue         : $info;
+$warning      : #ffbb00;
+$yellow       : $warning;
+$purple       : #9C27B0;
+$indigo       : $purple;
+$code         : #F74B5C;
+$cyan         : #00aec5;
+$teal         : #009688;
+$pink         : #E91E63;
+$orange       : #FF9800;
+
+//
+//Soft Colors
+//
+$primary-100  : #E1E5FC;
+$secondary-100: #EBEBF0;
+$success-100  : #DCF8ED;
+$danger-100   : #FDDEE4;
+$info-100     : #D9F2FD;
+$warning-100  : #FFF5D9;
+$dark-100     : #E1E2E3;
+
+$soft-colors: ();
+$soft-colors: map-merge(
+	(
+		'primary-soft'  : $primary-100,
+		'secondary-soft': $secondary-100,
+		'success-soft'  : $success-100,
+		'danger-soft'   : $danger-100,
+		'info-soft'     : $info-100,
+		'warning-soft'  : $warning-100,
+		'dark-soft'     : $dark-100
+	),
+	$soft-colors
+);
+
+//
+//Colors
+//
+// $colors: ();
+// $colors: map-merge(
+// 	(
+// 		"purple":     $purple,
+// 		"pink":       $pink,
+// 		"orange":     $orange,
+// 		"teal":       $teal,
+// 		"cyan":       $cyan,
+// 		"white":      $white,
+// 		"gray":       $gray-600,
+// 		"gray-dark":  $gray-800
+// 	),
+// 	$colors
+// );
+//
+//Theme Colors
+//
+$theme-colors: (
+	"theme":      $primary,
+	"primary":    $primary,
+	"secondary":  $secondary,
+	"success":    $success,
+	"info":       $info,
+	"warning":    $warning,
+	"danger":     $danger,
+	"light":      $light,
+	"dark":       $dark
+);
+
+//
+//Social Colors
+//
+$social-colors: (
+	"twitter"    : #00aced,
+	"facebook"   : #3b5998,
+	"googleplus" : #dd4b39,
+	"pinterest"  : #cb2027,
+	"linkedin"   : #007bb6,
+	"youtube"    : #bb0000,
+	"vimeo"      : #aad450,
+	"tumblr"     : #32506d,
+	"instagram"  : #517fa4,
+	"flickr"     : #ff0084,
+	"dribbble"   : #ea4c89,
+	"quora"      : #a82400,
+	"foursquare" : #0072b1,
+	"forrst"     : #5B9A68,
+	"vk"         : #45668e,
+	"wordpress"  : #21759b,
+	"stumbleupon": #EB4823,
+	"yahoo"      : #7B0099,
+	"blogger"    : #fb8f3d,
+	"soundcloud" : #ff3a00,
+	"ok"         : #F6881F,
+	"github"     : #4183c4,
+	"kickstarter": #76cc1e,
+	"rdio"       : #0088da,
+	"lanyrd"     : #152e51,
+	"lastfm"     : #d51007,
+	"photodrop"  : #cdb6e3
+);
+
+
+$united-colors: map-merge($grays, $theme-colors);
+$united-colors: map-merge($united-colors, $soft-colors);
+$united-colors: map-merge($united-colors, $grays);
+$united-colors: map-merge($united-colors, $social-colors);
