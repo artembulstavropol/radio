@@ -1,0 +1,45 @@
+// Then include the following
+
+
+html{
+    //font-size: $html-root-font-size;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+html{
+  height: 100%;
+  background-color: #091844 !important;
+  color: white;
+  text-align: center;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;;
+    height: 100%;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    //font-weight: $font-weight-base;
+    //line-height: $line-height-base;
+    margin: 0;
+    text-align: left;
+    font-size: $default-font-size;
+    background: none;
+}
+
+::selection{
+    color: white;
+    background: $theme;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+@import './components/_btn.scss';
+@import './components/_wrapper.scss';
