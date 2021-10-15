@@ -1,0 +1,15 @@
+
+
+//Vars
+@import "_vars.scss";
+
+
+//Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/bootstrap-vue/src/index.scss';
+
+//Import modules
+@import "_global.scss";
+@import "components/_wrapper.scss";
+
+
